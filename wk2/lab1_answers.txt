@@ -46,4 +46,3 @@ A: 7, hosted by aarnet.edu.au. This is own by the academic and research network 
 A: No, the US one was the fastest despite being further than Japan.
 
 Exercise 4: Use ping to gain insights into network performance
-
