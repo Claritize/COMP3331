@@ -49,16 +49,17 @@ Exercise 4: Use ping to gain insights into network performance
 1. For each of these locations ﬁnd the (approximate) physical distance from UNSW using Google Maps and compute the shortest 
    possible time T for a packet to reach that location from UNSW. You should assume that the packet moves (i.e. propagates) at 
    the speed of light, 3 x 10 8 m/s. Note that the shortest possible time will simply be the distance divided by the propagation 
-   speed. Plot a graph where the x-axis represents the distance to each city (i.e. Adelaide Brisbane, Singapore and Berlin), 
+   speed. Plot a graph where the x-axis represents the distance to each city (i.e. Brisbane, Singapore and Berlin), 
    and the y-axis represents the ratio between the minimum delay (i.e. RTT) as measured by the ping program (select the values for 
    50 byte packets) and the shortest possible time T to reach that city from UNSW. (Note that the y-values are no smaller than 2 
    since it takes at least 2*T time for any packet to reach the destination from UNSW and get back). Can you think of at least two reasons 
    why the y-axis values that you plot are greater than 2?
-A: 
+A: Fig1.png
 
 2. Is the delay to the destinations constant or does it vary over time? Explain why.
-A: 
+A: It varies over time. This is most likely because the traffic at the time would heavily affect the time taken for routers between
+   locations to process transmissions.
 
 3. The measured delay (i.e., the delay you can see in the graphs) is composed of propagation delay, transmission delay, processing delay and 
    queuing delay. Which of these delays depend on the packet size and which do not?
-A: 
+A: Only transmission delay would depend on the packet size. The others all refer to other aspects of the network which might cause a delay.
