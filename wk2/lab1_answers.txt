@@ -1,0 +1,21 @@
+Exercise 1: nslookup
+1. Which is the IP address of the Google site ( www.google.com )? 
+   In your opinion, what is the reason of having several IP addresses as an output?
+A: 216.58.196.142. Google most likely uses multiple connections to the internet to spread the massive loads that
+   it has to be able to support. There fore it might have many public ip endpoints registered in the DNS.
+
+2. Find out name of the IP address 127.0.0.1. What is special about this IP address?
+A: localhost. This is the loopback address for the local machine. AKA access itself like it was an external device.
+
+Exercise 2: Use ping to test host reachability
+Are the following hosts reachable from your machine by using ping?
+www.cse.unsw.edu.au:    yes
+www.getfittest.com.au:  no, no DNS record
+www.mit.edu:            yes
+www.intel.com.au:       no, no TLD for the .au domain
+www.tpg.com.au:         yes
+www.hola.hp:            no, no TLD called .hp
+www.amazon.com:         yes
+www.tsinghua.edu.cn:    yes
+www.kremlin.ru:         no, no record for kremlin in .ru TLD
+8.8.8.8:                yes
