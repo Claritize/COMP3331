@@ -17,5 +17,33 @@ www.tpg.com.au:         yes
 www.hola.hp:            no, no TLD called .hp
 www.amazon.com:         yes
 www.tsinghua.edu.cn:    yes
-www.kremlin.ru:         no, no record for kremlin in .ru TLD
+www.kremlin.ru:         no, probably closed port that ping uses
 8.8.8.8:                yes
+
+Execise 3: Use traceroute to understand network topology
+1. Run traceroute on your machine to www.columbia.edu.
+   How many routers are there between your workstation and www.columbia.edu? 
+A: 21
+   How many routers along the path are part of the UNSW network?
+A: 5/6
+   Between which two routers do packets cross the Pacific Ocean? 
+   Hint: compare the round trip times from your machine to the routers using ping.
+A: 9 and 10
+
+2. Run traceroute from your machine to the following destinations:
+    (i) www.ucla.edu 
+    (ii) www.u-tokyo.ac.jp
+    (iii) www.lancaster.ac.uk 
+
+   At which router do the paths from your machine to these three destinations diverge?
+   Find out further details about this router.
+   HINT: You can find out more about a router by running the whois command: whois router-IP-address. 
+A: 7, hosted by aarnet.edu.au. This is own by the academic and research network (which assumably has a direct connections
+   to the sea cables redirecting across the oceans).
+
+   Is the number of hops on each path proportional the physical distance? 
+   HINT: You can find out geographical location of a server using the following tool - http://www.yougetsignal.com/tools/network-location/
+A: No, the US one was the fastest despite being further than Japan.
+
+Exercise 4: Use ping to gain insights into network performance
+
